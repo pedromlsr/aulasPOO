@@ -1,0 +1,20 @@
+package exemplo_pessoa_heranca_totalPorClasse_abstract;
+
+public class TestePessoa {
+
+	public static void main(String[] args) {
+		PessoaFisica pf1 = new PessoaFisica("Pedro", "Rua A", 100000.00, "11111111");
+		PessoaJuridica pj1 = new PessoaJuridica("Oi", "Rua B", 500000.00, "222222", "Blablabla");
+		TotalTributos tt = new TotalTributos();
+		
+		System.out.println("Total IR: " + pf1.calculaImpostoDeRenda());
+		System.out.println("Total IR PJ: " + pj1.calculaImpostoDeRenda());
+		System.out.println("Total ICMS PJ: " + pj1.calculaICMS());
+		
+		tt.totalizarTributos(pf1);
+		tt.totalizarTributos(pj1);
+		
+		System.out.println("Total arrecadado: " + tt.getTotal());
+	}
+
+}

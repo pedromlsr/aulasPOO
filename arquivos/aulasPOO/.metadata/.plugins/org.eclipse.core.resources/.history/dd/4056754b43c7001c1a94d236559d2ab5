@@ -1,0 +1,66 @@
+package persistence;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import interfaces.ProdutoImplements;
+import model.Produto;
+
+public class ProdutoDao implements ProdutoImplements {
+
+	private Connection connection;
+
+	public ProdutoDao() {
+		connection = ConnectionFactorySingleton.getConnection();
+	}
+
+	@Override
+	public List<Produto> listar() {
+		return null;
+	}
+
+	@Override
+	public Produto buscar(int codigo) {
+		return null;
+	}
+
+	@Override
+	public void remover(int codigo) {
+
+	}
+
+	@Override
+	public void inserir(Produto produto) {
+		try {
+			String sql = "insert into produto (nome=?,descricao=?,preco=?,quantidade_estoque=?)";
+			PreparedStatement stmt = connection.prepareStatement(sql);
+			stmt.setString(1, produto.getNome());
+			stmt.setString(2, produto.getDescricao());
+			stmt.setDouble(3, produto.getPreco());
+			stmt.setInt(4, produto.getQuantidadeEstoque());
+			stmt.execute();
+			stmt.close();
+			connection.close();
+		} catch (Exception e) {
+			System.out.println("Não foi possível inserir os registros do produto.");
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void atualizar(Produto produto) {
+		try {
+			
+		} catch (Exception e) {
+			System.out.println("Não foi possível atualizar os registros do produto.");
+		}
+	}
+
+	@Override
+	public String buscaPorNome(String nome) {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+package persistence;
+
+public class ConnectionFactorySingleton {
+	private String urlConexao = "jdbc:postgresql://localhost:5432/testebd";
+	private String usuario = "postgres";
+	private String senha = "vp25a8ck";
+}

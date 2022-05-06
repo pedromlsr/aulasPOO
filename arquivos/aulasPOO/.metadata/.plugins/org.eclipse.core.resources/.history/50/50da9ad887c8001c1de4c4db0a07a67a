@@ -1,0 +1,17 @@
+package org.serratec.exemplos;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class ExemploStream {
+
+	public static void main(String[] args) {
+		List<String> cores = Arrays.asList("Preto", "Amarelo", "Verde");
+		
+		Stream<String> streamCores = cores.stream();
+		streamCores.forEach(c -> System.out.println(c));
+		
+	}
+
+}

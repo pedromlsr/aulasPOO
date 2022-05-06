@@ -1,0 +1,12 @@
+package exemplo1_data;
+
+import java.util.Date;
+
+public class Exemplo1Data {
+
+	public static void main(String[] args) {
+		Date dataDeHoje = new Date();
+		System.out.println(dataDeHoje);
+	}
+
+}

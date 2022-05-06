@@ -1,0 +1,10 @@
+package exercicio1;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		//Escreva um programa que leia um arquivo texto e retorne a quantidade de caracteres ele possui.
+		
+	}
+
+}

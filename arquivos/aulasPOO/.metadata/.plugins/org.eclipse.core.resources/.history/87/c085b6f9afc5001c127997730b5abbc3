@@ -1,0 +1,19 @@
+package exemplo4_arquivo;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Exemplo4Leitura {
+
+	public static void main(String[] args) {
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("C:/Teste_aula11_POO/exercicio.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

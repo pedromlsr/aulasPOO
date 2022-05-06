@@ -1,0 +1,14 @@
+package org.serratec.exemplos;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ExemploListaInteiros {
+
+	public static void main(String[] args) {
+		List<Integer> numeros = Arrays.asList(20, 30, 40, 60, 10);
+		numeros.stream().map(a -> a * 2).forEach(a -> System.out.println(a));
+		
+	}
+
+}

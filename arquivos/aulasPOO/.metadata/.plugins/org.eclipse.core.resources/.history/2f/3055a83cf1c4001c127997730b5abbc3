@@ -1,0 +1,10 @@
+package exemplo4_data;
+
+public class ExemploDiferencaDatas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

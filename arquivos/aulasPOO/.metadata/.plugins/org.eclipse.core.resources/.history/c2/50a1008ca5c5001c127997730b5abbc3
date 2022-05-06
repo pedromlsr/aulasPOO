@@ -1,0 +1,10 @@
+package exemplo5_data;
+
+public class ExemploDataHora {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

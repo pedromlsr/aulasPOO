@@ -1,0 +1,13 @@
+package exemplo6_arquivo;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Exemplo6Gravacao {
+
+	public static void main(String[] args) {
+		BufferedWriter bw = new BufferedWriter(new FileWriter("C:/Teste_aula11_POO/exercicio.txt"));
+		bw.append("Serratec-Java");
+	}
+
+}

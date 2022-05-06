@@ -1,0 +1,11 @@
+package persistence;
+
+import java.sql.Connection;
+
+public class ClienteDao {
+	private Connection connection;
+
+	public ClienteDao() {
+		connection = new ConnectionFactory().getConnection();
+	}
+}

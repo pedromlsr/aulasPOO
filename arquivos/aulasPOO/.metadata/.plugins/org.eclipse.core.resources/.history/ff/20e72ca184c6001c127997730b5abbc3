@@ -1,0 +1,21 @@
+package persistence;
+
+import java.sql.Connection;
+
+import model.Cliente;
+
+public class ClienteDao {
+	private Connection connection;
+
+	public ClienteDao() {
+		connection = new ConnectionFactory().getConnection();
+	}
+	
+	public void inserir(Cliente cliente) {
+		try {
+			String sql = "insert into cliente (nome,telefone,email) values(?,?,?)";
+		} catch (Exception e) {
+			
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package persistence;
+
+import model.Produto;
+
+public class TesteCRUD {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto(null, "Macarrão", "Adria", 9.00, 100);
+		
+		
+	}
+
+}

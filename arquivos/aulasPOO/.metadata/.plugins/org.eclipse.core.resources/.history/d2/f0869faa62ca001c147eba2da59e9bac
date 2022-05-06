@@ -1,0 +1,14 @@
+package org.serratec.persistence;
+
+import org.serratec.model.Carro;
+import org.serratec.model.Seguro;
+
+public class TesteSeguro {
+
+	public static void main(String[] args) {
+		Seguro seguro1 = new Seguro("Parcial", 1200.00);
+		Carro carro1 = new Carro("VW", "Golf", 55000.00, seguro1);
+		
+	}
+
+}

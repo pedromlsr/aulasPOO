@@ -1,0 +1,42 @@
+package exercicio_oficina_getDayOfWeek_getMonthValue_enumComAtributo_heranca_interface_relac;
+
+import java.time.LocalDate;
+
+public class Moto extends Veiculo {
+	private int cilindradas;
+
+	public Moto(String modelo, double valorCobrado, LocalDate dataConserto, Proprietario proprietario,
+			int cilindradas) {
+		super(modelo, valorCobrado, dataConserto, proprietario);
+		this.cilindradas = cilindradas;
+	}
+
+	@Override
+	public String toString() {
+		return "Moto [cilindradas=" + cilindradas + "]";
+	}
+
+	public int getCilindradas() {
+		return cilindradas;
+	}
+
+	public void setCilindradas(int cilindradas) {
+		this.cilindradas = cilindradas;
+	}
+
+	@Override
+	public double trocarOleo() {
+		return TipoServico.OLEO.getValorPorServico();
+	}
+
+	@Override
+	public double revisao() {
+		return TipoServico.REVISAO.getValorPorServico();
+	}
+
+	@Override
+	public double lavarVeiculo() {
+		return TipoServico.LAVAGEM.getValorPorServico();
+	}
+
+}

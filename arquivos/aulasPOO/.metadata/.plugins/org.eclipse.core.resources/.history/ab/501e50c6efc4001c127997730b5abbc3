@@ -1,0 +1,10 @@
+package exemplo3_data;
+
+public class ExemploLocalDate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

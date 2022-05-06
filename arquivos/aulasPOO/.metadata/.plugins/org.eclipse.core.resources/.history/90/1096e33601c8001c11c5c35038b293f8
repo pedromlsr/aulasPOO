@@ -1,0 +1,32 @@
+package exemplo1_fornecedor;
+
+public class Fornecedor {
+	private String cnpj;
+	private String nome;
+	private String email;
+
+	public Fornecedor(String cnpj, String nome, String email) {
+		super();
+		this.cnpj = cnpj;
+		this.nome = nome;
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Fornecedor [cnpj=" + cnpj + ", nome=" + nome + ", email=" + email + "]";
+	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+}

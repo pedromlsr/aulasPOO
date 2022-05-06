@@ -1,0 +1,42 @@
+package exemplo1_compare;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class TestePessoa {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa("Pedro", "12345678", 28);
+		Pessoa p2 = new Pessoa("Fábio", "11112222", 27);
+		Pessoa p3 = new Pessoa("Francarlo", "33334444", 59);
+
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+		pessoas.add(p1);
+		pessoas.add(p2);
+		pessoas.add(p3);
+		
+		Collections.sort(pessoas);
+		System.out.println(pessoas);
+		
+		public List<Pessoa> listaOrdenada(List<Pessoa> pessoas) {
+			Collections.sort(pessoas, new Comparator<Pessoa>() {
+				Collator collator = Collator.getInstance(new Locale("pt","BR"));
+				public int compare(Pessoa p1, Pessoa p2) {
+					return collator.compare(p1.getNome(), p2.getNome());
+				}
+			});
+			return pessoas;
+		}
+		
+		
+		List<String>cores = new ArrayList<String>();
+		cores.add("Verde");
+		cores.add("Amarelo");
+		cores.add("Roxo");
+		Collections.sort(cores);
+		System.out.println(cores);
+		
+	}
+
+}

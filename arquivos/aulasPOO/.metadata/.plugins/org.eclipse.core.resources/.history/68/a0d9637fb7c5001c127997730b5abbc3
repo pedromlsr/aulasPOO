@@ -1,0 +1,22 @@
+package exemplo7_arquivo;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class TesteLeituraGravacao {
+
+	public static void main(String[] args) {
+		try {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Digite o nome do arquivo: ");
+			String nomeArquivo = sc.next();
+		} catch (IOException e) {
+			
+		}
+		
+		
+		
+		
+	}
+
+}

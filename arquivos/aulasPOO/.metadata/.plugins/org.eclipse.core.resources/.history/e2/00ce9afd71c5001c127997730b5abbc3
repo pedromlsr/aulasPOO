@@ -1,0 +1,5 @@
+package exemplo_pessoa_interfaceComHeranca_totalPorClasse;
+
+public interface ImpostoDeRenda {
+	public double calculaImpostoDeRenda();
+}

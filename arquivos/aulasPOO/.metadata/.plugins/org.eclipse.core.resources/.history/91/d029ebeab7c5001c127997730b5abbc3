@@ -1,0 +1,34 @@
+package exemplo7_arquivo;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class TesteLeituraGravacao {
+
+	public static void main(String[] args) {
+		try {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Digite o nome do arquivo: ");
+			String nomeArquivo = sc.next();
+			File arquivo = new File(nomeArquivo);
+			List<Empregado> empregados = new ArrayList<>();
+			while (sc.hasNextLine()) {
+				String linha = sc.nextLine();
+				if (!linha.isEmpty()) {
+					String[] dadosLinha = linha.split(";");
+					String nome = dadosLinha[0];
+					String profissao = dadosLinha[1];
+					empregados.add(new Empregado(nome, profissao));
+				}
+			}
+			sc.close();
+		} catch (Exception e) {
+			System.out.println("Erro!!");
+		}
+
+	}
+
+}

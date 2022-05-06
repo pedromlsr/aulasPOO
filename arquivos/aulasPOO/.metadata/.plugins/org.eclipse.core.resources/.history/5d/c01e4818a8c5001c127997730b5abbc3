@@ -1,0 +1,13 @@
+package exemplo1_arquivo;
+
+import java.io.File;
+
+public class Exemplo1Arquivo {
+
+	public static void main(String[] args) {
+		File arquivo = new File("C:\\Teste_aula11_POO");
+		
+
+	}
+
+}

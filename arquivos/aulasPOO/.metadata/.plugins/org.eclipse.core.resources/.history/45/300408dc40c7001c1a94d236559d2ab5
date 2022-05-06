@@ -1,0 +1,47 @@
+package persistence;
+
+import java.sql.Connection;
+import java.util.List;
+
+import interfaces.ProdutoImplements;
+import model.Produto;
+
+public class ProdutoDao implements ProdutoImplements {
+
+	private Connection connection;
+
+	public ProdutoDao() {
+		connection = ConnectionFactorySingleton.getConnection();
+	}
+
+	@Override
+	public List<Produto> listar() {
+		return null;
+	}
+
+	@Override
+	public Produto buscar(int codigo) {
+		return null;
+	}
+
+	@Override
+	public void remover(int codigo) {
+
+	}
+
+	@Override
+	public void inserir(Produto t) {
+
+	}
+
+	@Override
+	public void atualizar(Produto t) {
+
+	}
+
+	@Override
+	public String buscaPorNome(String nome) {
+		return null;
+	}
+
+}

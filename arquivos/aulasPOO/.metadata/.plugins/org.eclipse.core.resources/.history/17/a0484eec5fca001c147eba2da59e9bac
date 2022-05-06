@@ -1,0 +1,17 @@
+package org.serratec.persistence;
+
+import java.sql.Connection;
+
+import org.serratec.model.Funcionario;
+
+public class FuncionarioDao {
+
+	public FuncionarioDao() {
+		Connection connection = ConnectionFactorySingleton.getConnection();
+	}
+
+	public Funcionario buscar(String nome) {
+		return null;
+	}
+	
+}

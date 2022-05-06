@@ -1,0 +1,5 @@
+package exemplo_pessoa_interfaceComHeranca_totalPorClasse;
+
+public interface Tributos extends Taxas, ImpostoDeRenda {
+	public double calculaICMS();
+}

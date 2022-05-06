@@ -1,0 +1,5 @@
+package org.serratec.persistence;
+
+public class FuncionarioDao {
+
+}

@@ -1,0 +1,8 @@
+package interfaces;
+
+import model.Produto;
+
+public interface ProdutoImplements extends CrudGenerico<Produto> {
+	
+	public String buscaPorNome(String nome);
+}

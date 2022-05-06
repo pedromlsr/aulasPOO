@@ -1,0 +1,19 @@
+package exemplo1_serializable;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class ExemploSerializacao {
+
+	public static void main(String[] args) {
+		try {
+			FileOutputStream arquivoGravar = new FileOutputStream("exemplos/fornecedor.dat");
+			ObjectOutputStream gravarObjeto = new ObjectOutputStream(arquivoGravar);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

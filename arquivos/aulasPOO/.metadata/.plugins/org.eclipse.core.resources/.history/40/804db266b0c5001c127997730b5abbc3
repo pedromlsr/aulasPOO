@@ -1,0 +1,10 @@
+package exemplo5_arquivo;
+
+public class Exemplo5Leitura {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

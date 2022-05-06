@@ -1,0 +1,10 @@
+package org.serratec.model;
+
+import java.time.LocalDate;
+
+public class Produto {
+	private Integer codigo;
+	private String nome;
+	private Integer quantidadeEstoque;
+	private LocalDate dataCadastro;
+}

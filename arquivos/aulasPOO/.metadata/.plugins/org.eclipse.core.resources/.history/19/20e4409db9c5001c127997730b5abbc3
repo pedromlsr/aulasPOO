@@ -1,0 +1,10 @@
+package exemplo7_arquivo;
+
+public class TesteEquals {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

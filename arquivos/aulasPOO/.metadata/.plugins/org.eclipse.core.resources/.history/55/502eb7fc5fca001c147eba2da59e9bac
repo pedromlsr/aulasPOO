@@ -1,0 +1,16 @@
+package org.serratec.persistence;
+
+import org.serratec.model.Funcionario;
+
+public class TesteFuncionario {
+
+	public static void main(String[] args) {
+		FuncionarioDao dao = new FuncionarioDao();
+
+		Funcionario funcionario = dao.buscar("Roni");
+		if (funcionario != null) {
+			System.out.println("Resultado: " + funcionario.getNome());
+		}
+	}
+
+}

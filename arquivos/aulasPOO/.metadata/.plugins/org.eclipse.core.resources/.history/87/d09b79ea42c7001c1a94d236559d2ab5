@@ -1,0 +1,15 @@
+package persistence;
+
+import model.Produto;
+
+public class TesteCRUD {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto(null, "Maçã", "Gala", 9.00, 100);
+		ProdutoDao dao = new ProdutoDao();
+		
+		dao.inserir(produto);
+		
+	}
+
+}

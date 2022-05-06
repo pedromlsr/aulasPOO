@@ -1,0 +1,13 @@
+package exemplo4_data;
+
+import java.time.LocalDate;
+
+public class ExemploDiferencaDatas {
+
+	public static void main(String[] args) {
+		LocalDate hoje = LocalDate.now();
+		System.out.println("Dia da semana:" + hoje.getDayOfWeek());
+
+	}
+
+}

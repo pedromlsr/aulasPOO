@@ -1,0 +1,21 @@
+package br.com.senai.exemplos;
+
+import br.com.senai.interfaces.Conta;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta() {
+
+			@Override
+			public void transacao() {
+				System.out.println("Transação efetuada com sucesso!");
+			}
+			
+		};
+		
+		conta.transacao();
+		
+	}
+
+}

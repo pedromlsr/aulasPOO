@@ -1,0 +1,14 @@
+package persistence;
+
+import model.Cliente;
+
+public class TestarDao {
+
+	public static void main(String[] args) {
+		ClienteDao dao = new ClienteDao();
+		Cliente cliente = new Cliente(null, "Marta", "234433", "marta@gmail.com");
+		dao.inserir(cliente);
+		
+	}
+
+}

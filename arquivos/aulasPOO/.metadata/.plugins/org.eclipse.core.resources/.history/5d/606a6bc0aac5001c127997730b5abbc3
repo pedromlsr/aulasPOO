@@ -1,0 +1,13 @@
+package exemplo3_arquivo;
+
+import java.util.Scanner;
+
+public class Exemplo3ListarArquivosPastas {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o arquivo ou diretório: ");
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package exercicio_revisao;
+
+public class AssistenteFinanceiro extends Assistente {
+	private int sala;
+
+	public AssistenteFinanceiro(String nome, double salario, String categoria, int sala) {
+		super(nome, salario, categoria);
+		this.sala = sala;
+	}
+
+	@Override
+	public String toString() {
+		return "AssistenteFinanceiro [sala=" + sala + ", nome=" + nome + ", salario=" + salario + "]";
+	}
+
+	public int getSala() {
+		return sala;
+	}
+
+	public void setSala(int sala) {
+		this.sala = sala;
+	}
+
+}

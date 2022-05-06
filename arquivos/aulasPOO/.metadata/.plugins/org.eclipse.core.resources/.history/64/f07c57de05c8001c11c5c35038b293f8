@@ -1,0 +1,40 @@
+package br.com.senai.exemplos;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class ExemploSerializacao {
+
+	public static void main(String[] args) {
+		Fornecedor f1 = new Fornecedor("1111111111", "Empresa XPTO", "xpto@gmail.com");
+		
+		try {
+			FileOutputStream arquivoGravar = new FileOutputStream("/exemplos/fornecedor.dat");
+			ObjectOutputStream gravarObjeto = new ObjectOutputStream(arquivoGravar);
+			gravarObjeto.writeObject(f1);
+			gravarObjeto.flush();
+			gravarObjeto.close();
+			arquivoGravar.close();
+			
+		} catch (Exception e) {
+			System.out.println("Não foi possível gravar o objeto.");
+			e.printStackTrace();
+		}
+		
+		System.out.println("Leitura do objeto criado.");
+		
+		try {
+			FileInputStream caminhoArquivo = new FileInputStream("/exemplos/fornecedor.dat");
+			ObjectInputStream lerObjeto = new ObjectInputStream(caminhoArquivo);
+			System.out.println(lerObjeto.readObject());
+			lerObjeto.close();
+			caminhoArquivo.close();
+		} catch (Exception e) {
+			
+		}
+		
+	}
+
+}

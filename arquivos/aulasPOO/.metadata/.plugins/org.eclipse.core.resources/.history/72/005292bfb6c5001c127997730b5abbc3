@@ -1,0 +1,15 @@
+package exemplo7_arquivo;
+
+import java.util.Scanner;
+
+public class TesteLeituraGravacao {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o nome do arquivo: ");
+		String nome = sc.next();
+		
+		
+	}
+
+}

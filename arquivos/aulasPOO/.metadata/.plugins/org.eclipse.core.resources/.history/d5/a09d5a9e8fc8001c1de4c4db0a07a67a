@@ -1,0 +1,15 @@
+package org.serratec.exemplos;
+
+import java.time.LocalDate;
+
+import org.serratec.model.Produto;
+
+public class TesteProduto {
+	public static void main(String[] args) {
+		Produto p1 = new Produto(1, "Arroz", 100, LocalDate.of(2022, 04, 1));
+		Produto p2 = new Produto(2, "Farinha", 30, LocalDate.of(2022, 04, 2));
+		Produto p3 = new Produto(3, "Macarrão", 20, LocalDate.of(2022, 04, 3));
+		Produto p4 = new Produto(4, "Feijão", 120, LocalDate.of(2022, 04, 4));
+		
+	}
+}

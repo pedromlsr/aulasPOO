@@ -1,0 +1,13 @@
+package br.com.senai.model;
+
+import br.com.senai.interfaces.Conta;
+
+public class ContaCorrente implements Conta {
+
+	@Override
+	public void transacao() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

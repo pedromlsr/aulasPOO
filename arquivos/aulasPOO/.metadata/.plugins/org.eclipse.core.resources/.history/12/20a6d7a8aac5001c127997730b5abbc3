@@ -1,0 +1,10 @@
+package exemplo3_arquivo;
+
+public class Exemplo3ListarArquivosPastas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

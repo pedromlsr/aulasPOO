@@ -1,0 +1,15 @@
+package persistence;
+
+import java.sql.Connection;
+
+public class ConnectionFactory {
+	private String urlConexao = "jdbc:postgresql://localhost:5432/testebd";
+	private String usuario = "postgres";
+	private String senha = "vp25a8ck";
+
+	private Connection connection;
+	
+	
+	
+}
+

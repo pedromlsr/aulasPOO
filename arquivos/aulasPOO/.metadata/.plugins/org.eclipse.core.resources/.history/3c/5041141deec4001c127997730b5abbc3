@@ -1,0 +1,10 @@
+package exemplo1_data;
+
+public class Exemplo1Data {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

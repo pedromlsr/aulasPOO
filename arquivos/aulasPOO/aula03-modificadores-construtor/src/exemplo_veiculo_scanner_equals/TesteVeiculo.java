@@ -1,0 +1,25 @@
+package exemplo_veiculo_scanner_equals;
+
+import java.util.Scanner;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char resposta = 's';
+		do {
+			Veiculo v1 = new Veiculo();
+			System.out.println("Digite a placa do veículo: ");
+			v1.placa = sc.next();
+			System.out.println("Digite o tipo de combustível: ");
+			v1.tipoCombustivel = sc.next();
+			System.out.println("Digite o valor do veículo: ");
+			v1.valor = sc.nextDouble();
+			System.out.println("O valor do IPVA 2022 é: " + v1.calcularIPVA());
+			System.out.println("Deseja continuar (S/s)");
+			resposta = sc.next().charAt(0);
+		} while (resposta == 'S' || resposta == 's');	
+		sc.close();
+	}
+	
+}

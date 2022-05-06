@@ -1,0 +1,13 @@
+package exemplo2_data;
+
+import java.util.Calendar;
+
+public class ExemploCalendar {
+
+	public static void main(String[] args) {
+		Calendar dataDeHoje = Calendar.getInstance();
+		System.out.println(dataDeHoje);
+
+	}
+
+}

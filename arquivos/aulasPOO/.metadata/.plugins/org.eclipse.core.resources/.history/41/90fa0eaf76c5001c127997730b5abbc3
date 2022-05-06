@@ -1,0 +1,51 @@
+package org.serratec.enumeradores;
+
+import java.time.LocalDate;
+
+public class Carro extends Veiculo {
+	private String categoria;
+
+	public Carro(String modelo, double valorCobrado, LocalDate dataConserto, Proprietario proprietario,
+			String categoria) {
+		super(modelo, valorCobrado, dataConserto, proprietario);
+		this.categoria = categoria;
+	}
+
+	@Override
+	public String toString() {
+		return "Carro [categoria=" + categoria + "]";
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	@Override
+	public double trocarOleo() {
+
+		if (dataConserto.getDayOfWeek().getValue() == 6) {
+			return TipoServico.OLEO.getValorPorServico() - 50.00;
+		} else {
+			return TipoServico.OLEO.getValorPorServico();
+		}
+	}
+
+	@Override
+	public double revisao() {
+		if (dataConserto.getMonthValue() == 8) {
+			return TipoServico.REVISAO.getValorPorServico() * 0.9;
+		} else {
+			return TipoServico.REVISAO.getValorPorServico();
+		}
+	}
+
+	@Override
+	public double lavarVeiculo() {
+		return TipoServico.LAVAGEM.getValorPorServico();
+	}
+
+}

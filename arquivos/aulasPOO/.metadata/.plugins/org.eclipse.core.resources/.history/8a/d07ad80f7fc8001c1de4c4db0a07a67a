@@ -1,0 +1,21 @@
+package org.serratec.exemplos;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.serratec.model.Aluno;
+
+public class Exemplo1 {
+
+	public static void main(String[] args) {
+		new Aluno(1, "Pedro", "pedro@gmail.com", 28);
+		new Aluno(2, "Pedro2", "pedro2@gmail.com", 29);
+		new Aluno(3, "Pedro3", "pedro3@gmail.com", 30);
+		new Aluno(4, "Pedro4", "pedro4@gmail.com", 31);
+		new Aluno(5, "Pedro5", "pedro5@gmail.com", 32);
+
+		List<Aluno> alunos = Arrays.asList(null);
+		
+	}
+
+}
